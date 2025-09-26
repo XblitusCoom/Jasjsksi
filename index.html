@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance Apps</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-width: 480px;
+      animation: fadeIn 1.5s ease;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    /* Ikon Gear Animasi */
+    .gear {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      animation: spin 4s linear infinite;
+    }
+
+    /* Animasi Background Partikel */
+    .particle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      animation: float 10s infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); opacity: 0.7; }
+      50% { transform: translateY(-100px) scale(1.5); opacity: 0.3; }
+      100% { transform: translateY(0) scale(1); opacity: 0.7; }
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    .contact {
+      margin-top: 10px;
+    }
+
+    .contact a {
+      color: #00e6ff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #00e6ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Ikon gear -->
+    <svg class="gear" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+      <path d="M19.14,12.94a7.07,7.07,0,0,0,.05-1,7.07,7.07,0,0,0-.05-1l2.11-1.65a.5.5,0,0,0,.12-.64l-2-3.46a.5.5,0,0,0-.61-.22l-2.49,1a6.91,6.91,0,0,0-1.73-1l-.38-2.65A.5.5,0,0,0,13,2H11a.5.5,0,0,0-.49.41L10.14,5.06a6.91,6.91,0,0,0-1.73,1l-2.49-1a.5.5,0,0,0-.61.22l-2,3.46a.5.5,0,0,0,.12.64L5.54,10a7.07,7.07,0,0,0-.05,1,7.07,7.07,0,0,0,.05,1L3.43,13.65a.5.5,0,0,0-.12.64l2,3.46a.5.5,0,0,0,.61.22l2.49-1a6.91,6.91,0,0,0,1.73,1l.38,2.65A.5.5,0,0,0,11,22h2a.5.5,0,0,0,.49-.41l.38-2.65a6.91,6.91,0,0,0,1.73-1l2.49,1a.5.5,0,0,0,.61-.22l2-3.46a.5.5,0,0,0-.12-.64ZM12,15.5A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/>
+    </svg>
+
+    <h1>Maintenance Apps</h1>
+    <p>Server sedang dalam <b>perbaikan</b> untuk peningkatan performa.<br>Estimasi selesai sekitar <b>7 jam</b> dari sekarang.</p>
+    <footer>
+      Terima kasih atas kesabaran Anda 🙏
+      <div class="contact">
+        Contact : <a href="https://t.me/XBhigh" target="_blank"> Developer</a>
+      </div>
+    </footer>
+
+    <!-- Partikel dekorasi -->
+    <div class="particle" style="left:20px; bottom:30px; animation-delay:0s;"></div>
+    <div class="particle" style="right:40px; bottom:50px; animation-delay:2s;"></div>
+    <div class="particle" style="left:100px; bottom:10px; animation-delay:4s;"></div>
+    <div class="particle" style="right:80px; bottom:80px; animation-delay:6s;"></div>
+  </div>
+</body>
+</html>
